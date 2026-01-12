@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClevrStep | Contact & Support</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/Icon.png" alt="Logo" class="logo-img">
+            <span class="logo-text">ClevrStep</span>
+        </div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" style="color:var(--accent-navy)">Contact</a></li>
+                <li><a href="contact.html" class="nav-enroll-btn">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Contact</h1>
+            <p class="sub">Get in touch with our team</p>
+        </div>
+        <svg class="hero-blob" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+                <linearGradient id="gradHero" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#f5efe6" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#0b2545" stop-opacity="0.06"/>
+                </linearGradient>
+            </defs>
+            <path fill="url(#gradHero)" d="M421,332Q372,414,299,440Q226,466,157,422Q88,378,77,305Q66,232,99,170Q132,108,202,82Q272,56,341,78Q410,100,440,166Q470,232,421,332Z" />
+        </svg>
+    </section>
+
+    <section>
+        <h2 class="reveal">Get in Touch</h2>
+        
+        <div class="grid-container contact-layout">
+            
+            <div class="reveal">
+                <div class="card" style="text-align: left; height: 100%;">
+                    <img src="img/logo.png" style="width: 190px; margin-bottom: 30px;">
+                    <h3 style="color:var(--accent-navy);">Contact Information</h3>
+                    <p style="margin-bottom:30px;">Reach out to your trusted education consultant for more information regarding enrollment or visas.</p>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <div style="color:var(--accent-navy); font-weight:bold; margin-bottom:5px;">PHONE</div>
+                        <div style="color:var(--text-primary);">+94 70 609 1234</div>
+                        <div style="color:var(--text-primary);">+94 77 161 6575</div>
+                        <div style="color:var(--text-primary);">Australian Branch - +61 405 411 997</div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="color:var(--accent-navy); font-weight:bold; margin-bottom:5px;">ADDRESS</div>
+                        <div style="color:var(--text-primary);">Cleverstep Consultants,</div>
+                        <div style="color:var(--text-secondary);">No.149, Bulathkohupitiya Rd,<br>Gamsabha junction, Hettimulla,<br>Kegalle, Sri Lanka.</div>
+                    </div>
+
+                    <div>
+                        <div style="color:var(--accent-navy); font-weight:bold; margin-bottom:5px;">EMAIL</div>
+                        <div style="color:var(--text-primary);">clevrstep@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="contact-wrapper">
+                    <h3 style="color:var(--text-primary); margin-bottom:25px;">Send Us a Message</h3>
+                    
+                    <form id="contactForm">
+                        <input type="hidden" name="access_key" value="71902944-b66c-46df-b6e6-240166c224e4">
+                        <input type="hidden" name="from_name" value="ClevrStep Website Lead">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+
+                        <div class="input-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="form-group">
+                                <label>Age</label>
+                                <input type="number" name="age" required>
+                            </div>
+                            <div class="form-group">
+                                <label>WhatsApp Number</label>
+                                <input type="tel" name="whatsapp" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Inquiry Type</label>
+                            <select name="purpose">
+                                <option value="Enrollment">Enroll in a Course</option>
+                                <option value="Visa">Visa Consultation</option>
+                                <option value="General">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="4"></textarea>
+                        </div>
+
+                        <div id="form-status" style="margin-bottom:20px; font-weight:bold; min-height:24px;"></div>
+
+                        <button type="submit" class="btn" style="width:100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer style="padding: 40px; text-align: center; border-top: 1px solid var(--border-glass); color: var(--text-secondary);">
+        <p>&copy; 2025 ClevrStep Pvt Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

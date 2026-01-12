@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5efe6">
+    <title>ClevrStep | Future of Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="home">
+
+    <header>
+        <div class="logo-container">
+            <img src="img/Icon.png" alt="ClevrStep Logo" class="logo-img">
+            <span class="logo-text">ClevrStep</span>
+        </div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-enroll-btn">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content reveal">
+            <h1 style="color: #c69749;">Transform Your<br>Way Of Learning</h1>
+            <p>Master modern methodologies with comprehensive professional development programs designed for the NextGen.</p>
+            <div class="hero-actions">
+                <a href="courses.html" class="btn">Explore Courses</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Decorative SVG blob for creative flair (non-interactive) -->
+        <svg class="hero-blob" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+                <linearGradient id="gradHero" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#f5efe6" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#0b2545" stop-opacity="0.06"/>
+                </linearGradient>
+            </defs>
+            <path fill="url(#gradHero)" d="M421,332Q372,414,299,440Q226,466,157,422Q88,378,77,305Q66,232,99,170Q132,108,202,82Q272,56,341,78Q410,100,440,166Q470,232,421,332Z" />
+        </svg>
+        <div id="heroFloatImage" class="hero-float-image" aria-hidden="true"></div>
+
+    </section>
+
+    <section>
+        <h2 class="reveal">Why Choose ClevrStep?</h2>
+        <div class="grid-container">
+            <div class="card reveal">
+                <i class="fas fa-chalkboard-teacher icon-box"></i>
+                <h3>Expert Instructors</h3>
+                <p>Learn directly from industry veterans with decades of international teaching excellence.</p>
+            </div>
+            <div class="card reveal">
+                <i class="fas fa-clock icon-box"></i>
+                <h3>Flexible Learning</h3>
+                <p>Study at your own pace with lifetime access to digital course materials and resources.</p>
+            </div>
+            <div class="card reveal">
+                <i class="fas fa-hammer icon-box"></i>
+                <h3>Practical Skills</h3>
+                <p>Apply what you learn with hands-on projects tailored to the Australian job market.</p>
+            </div>
+            <div class="card reveal">
+                <i class="fas fa-chart-line icon-box"></i>
+                <h3>Career Growth</h3>
+                <p>Fast-track your career with industry-recognized certifications and visa pathways.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--bg-surface);">
+        <h2 class="reveal">Student Success Stories</h2>
+        
+        <div class="contact-wrapper reveal" style="margin-bottom: 50px; padding: 30px;">
+            <div id="reviewsContainer">
+                </div>
+            
+            <div id="viewAllContainer" style="text-align: center; margin-top: 20px; display: none;">
+                <button id="viewAllReviewsBtn" class="btn-outline" style="padding: 10px 25px; font-size: 0.9rem;">
+                    View All Reviews <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="contact-wrapper reveal">
+            <h3 style="color:var(--accent-navy); margin-bottom:20px; text-align:center;">Share Your Experience</h3>
+            <form id="reviewForm">
+                
+                <div class="star-rating-picker" style="text-align: center; margin-bottom: 20px;">
+                    <p style="color:var(--text-secondary); margin-bottom: 10px; font-size: 0.9rem;">Tap to Rate:</p>
+                    <div class="stars" id="starInput">
+                        <i class="fas fa-star" data-value="1"></i>
+                        <i class="fas fa-star" data-value="2"></i>
+                        <i class="fas fa-star" data-value="3"></i>
+                        <i class="fas fa-star" data-value="4"></i>
+                        <i class="fas fa-star" data-value="5"></i>
+                    </div>
+                    <input type="hidden" id="reviewRating" value="5">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="reviewName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="reviewText" rows="3" placeholder="How was your experience?" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width:100%;">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="padding: 40px; text-align: center; border-top: 1px solid var(--border-glass); color: var(--text-secondary);">
+        <p>&copy; 2025 ClevrStep Pvt Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <div id="allReviewsModal" class="modal">
+        <div class="modal-content review-modal-content">
+            <span class="close-modal" id="closeReviewsModal">&times;</span>
+            <h3 style="color: var(--accent-navy); margin-bottom: 20px; text-align: center;">All Student Reviews</h3>
+            <div id="modalReviewsList" class="scrollable-review-list">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClevrStep | Course Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/Icon.png" alt="Logo" class="logo-img">
+            <span class="logo-text">ClevrStep</span>
+        </div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" style="color:var(--accent-navy)">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-enroll-btn">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Courses</h1>
+            <p class="sub">Course catalog & pathway programs</p>
+        </div>
+        <!-- decorative blob - uses shared .hero-blob styles -->
+        <svg class="hero-blob" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+                <linearGradient id="gradHero" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#f5efe6" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#0b2545" stop-opacity="0.06"/>
+                </linearGradient>
+            </defs>
+            <path fill="url(#gradHero)" d="M421,332Q372,414,299,440Q226,466,157,422Q88,378,77,305Q66,232,99,170Q132,108,202,82Q272,56,341,78Q410,100,440,166Q470,232,421,332Z" />
+        </svg>
+    </section>
+
+    <section>
+        <h2 class="reveal">Stamford College (Offshore)</h2>
+        <p class="reveal" style="text-align:center; color:var(--text-secondary); margin-bottom:50px; max-width:600px; margin-left:auto; margin-right:auto;">
+            Select a course below to view detailed tuition fees, duration, and total cost estimates.
+        </p>
+
+        <div class="grid-container">
+            
+            <div class="card course-card reveal" 
+                 data-title="Cert III in Carpentry" 
+                 data-duration="96 Weeks" 
+                 data-tuition="$24,300" 
+                 data-total="$25,300">
+                <div class="course-img-wrapper"><img src="img/course_carpentry.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Cert III in Carpentry</h4>
+                    <p>CPC30220</p>
+                </div>
+            </div>
+
+            <div class="card course-card reveal" 
+                 data-title="Cert III in Painting & Decorating" 
+                 data-duration="60 Weeks" 
+                 data-tuition="$13,300" 
+                 data-total="$14,300">
+                <div class="course-img-wrapper"><img src="img/course_painting.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Cert III in Painting</h4>
+                    <p>CPC30620</p>
+                </div>
+            </div>
+
+            <div class="card course-card reveal" 
+                 data-title="Cert III in Commercial Cookery" 
+                 data-duration="52 Weeks" 
+                 data-tuition="$13,300" 
+                 data-total="$14,300">
+                <div class="course-img-wrapper"><img src="img/course_cookery.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Cert III in Cookery</h4>
+                    <p>SIT30821</p>
+                </div>
+            </div>
+
+            <div class="card course-card reveal" 
+                 data-title="Cert IV in Kitchen Management" 
+                 data-duration="78 Weeks" 
+                 data-tuition="$17,700" 
+                 data-total="$18,700">
+                <div class="course-img-wrapper"><img src="img/course_kitchen.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Cert IV Kitchen Mgmt</h4>
+                    <p>SIT40521</p>
+                </div>
+            </div>
+
+            <div class="card course-card reveal" 
+                 data-title="Diploma of Hospitality Management" 
+                 data-duration="104 Weeks" 
+                 data-tuition="$24,000" 
+                 data-total="$25,000">
+                <div class="course-img-wrapper"><img src="img/course_hospitality.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Dip. Hospitality Mgmt</h4>
+                    <p>SIT50422</p>
+                </div>
+            </div>
+
+            <div class="card course-card reveal" 
+                 data-title="Diploma of Building & Construction" 
+                 data-duration="55 Weeks" 
+                 data-tuition="$14,400" 
+                 data-total="$15,400">
+                <div class="course-img-wrapper"><img src="img/course_building.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Dip. Building & Const.</h4>
+                    <p>CPC50220</p>
+                </div>
+            </div>
+
+            <div class="card course-card reveal" 
+                 data-title="Adv. Dip. Civil Construction Design" 
+                 data-duration="104 Weeks" 
+                 data-tuition="$25,000" 
+                 data-total="$26,000">
+                <div class="course-img-wrapper"><img src="img/course_civil.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Adv. Dip. Civil Design</h4>
+                    <p>RII60520</p>
+                </div>
+            </div>
+
+            <div class="card course-card reveal" 
+                 data-title="Graduate Diploma of Management" 
+                 data-duration="52 Weeks" 
+                 data-tuition="$13,000" 
+                 data-total="$13,500">
+                <div class="course-img-wrapper"><img src="img/course_management.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Grad. Dip. Management</h4>
+                    <p>BSB80120</p>
+                </div>
+            </div>
+       
+            <div class="card course-card reveal" data-title="Diploma in Early Childhood Education" data-duration="Contact Us" data-tuition="Inquire" data-total="Inquire">
+                <div class="course-img-wrapper"><img src="img/course_early_childhood.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Early Childhood Education</h4>
+                    <p>TR PATHWAY</p>
+                </div>
+            </div>
+            
+            <div class="card course-card reveal" data-title="Diploma in Business Management" data-duration="Contact Us" data-tuition="Inquire" data-total="Inquire">
+                <div class="course-img-wrapper"><img src="img/course_business.jpg" class="course-img"></div>
+                <div class="course-info">
+                    <h4>Business Management</h4>
+                    <p>TR PATHWAY</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+        
+        
+    </section>
+
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div style="height:200px; overflow:hidden; border-radius:15px; margin-bottom:20px;">
+                <img id="modalImg" src="" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <h3 id="modalTitle" style="color:var(--accent-navy); margin-bottom:20px;"></h3>
+            
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px; margin-bottom:25px; background:rgba(0,0,0,0.2); padding:15px; border-radius:10px;">
+                <div>
+                    <span style="color:var(--text-secondary); font-size:0.8rem;">DURATION</span>
+                    <div id="modalDuration" style="font-weight:bold; color:var(--text-primary);"></div>
+                </div>
+                <div>
+                    <span style="color:var(--text-secondary); font-size:0.8rem;">TUITION</span>
+                    <div id="modalTuition" style="font-weight:bold; color:var(--text-primary);"></div>
+                </div>
+                <div style="grid-column: span 2; border-top:1px solid var(--border-glass); padding-top:10px; margin-top:5px;">
+                    <span style="color:var(--text-secondary); font-size:0.8rem;">TOTAL ESTIMATE</span>
+                    <div id="modalTotal" style="font-weight:bold; color:var(--accent-navy); font-size:1.2rem;"></div>
+                </div>
+            </div>
+
+            <a href="contact.html" class="btn" style="width:100%; text-align:center;">Proceed to Enrollment</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
